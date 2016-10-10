@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+#category {
+	width: auto;
+	margin-top: 15px;
+	margin-right: 20px;
+	margin-left: 20px;
+	
+
+}
+
+#mainList {
+	margin-left: 20px ;
+	margin-right: 20px ;
+}
+
+#searchItem {
+	margin-left: 20px;
+	margin-right: 20px;
+}

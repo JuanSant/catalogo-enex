@@ -1,0 +1,32 @@
+<ion-view view-title="Logo">
+  <ion-content>
+  	
+	<div id="category" class="list">
+
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+	      Categoría
+	    </div>
+	    <select>
+	      <option>Blue</option>
+	      <option selected>Green</option>
+	      <option>Red</option>
+	    </select>
+	  </label>
+	</div>
+
+	<div id="searchItem" class="list list-inset">
+	  <label class="item item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Search">
+	  </label>
+	</div>
+	<div id="mainList">
+	    <ion-list>
+	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+	        {{playlist.title}}
+	      </ion-item>
+    	</ion-list>
+    </div>
+  </ion-content>
+</ion-view>
