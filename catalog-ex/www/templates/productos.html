@@ -15,16 +15,16 @@
 	  </label>
 	</div>
 
-	<div id="searchItem" class="list list-inset">
+	<div id="agendaItem" class="list list-inset">
 	  <label class="item item-input">
-	    <i class="icon ion-search placeholder-icon"></i>
-	    <input type="text" placeholder="Search">
+	    <i class="icon ion-agenda placeholder-icon"></i>
+	    <input type="text" placeholder="agenda">
 	  </label>
 	</div>
 	<div id="mainList">
 	    <ion-list>
-	      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-	        {{playlist.title}}
+	      <ion-item ng-repeat="producto in productos" href="#/app/productos/{{producto.id}}">
+	        {{producto.title}}
 	      </ion-item>
     	</ion-list>
     </div>
