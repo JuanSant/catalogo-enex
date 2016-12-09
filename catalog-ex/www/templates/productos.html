@@ -22,10 +22,25 @@
 	  </label>
 	</div>
 	<div id="mainList">
-	    <ion-list>
-	      <ion-item ng-repeat="producto in productos" href="#/app/productos/{{producto.id}}">
-	        {{producto.title}}
-	      </ion-item>
+	   <ion-list> 
+	    	
+	    		<ion-item ng-repeat="producto in productos" href="#/app/productos/{{producto.id}}"> 
+		       			 <ion-thumbnail item-left>
+		       			 	<img class="prod" src="/img/margarito.jpg">
+		       			 </ion-thumbnail>
+
+				    		<h2>
+				    			{{producto.title}}
+				    		</h2>
+				    		<p>Descripcion
+				    		</p>
+				    		<!--<button ion-button clear item-right>Editar</button>-->
+				    		<!--<ion-checkbox ng-model="isChecked"></ion-checkbox>-->
+					
+					    
+		        </ion-item> 
+		      	
+
     	</ion-list>
     </div>
   </ion-content>
