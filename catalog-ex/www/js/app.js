@@ -67,6 +67,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'productoCtrl'
       }
     }
+  })
+
+  .state('app.productosConfig', {
+    url: '/productosConfig',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/productos_editar.html',
+        controller: 'productoCtrl'
+      }
+    }
+  })
+
+  .state('app.usuariosConfig', {
+    url: '/usuariosConfig',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/usuarios_editar.html'
+     
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/productos');
