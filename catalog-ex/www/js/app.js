@@ -74,7 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/productos_editar.html',
-        controller: 'productoCtrl'
+        controller: 'productosCtrl'
       }
     }
   })
@@ -83,7 +83,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/usuariosConfig',
     views: {
       'menuContent': {
-        templateUrl: 'templates/usuarios_editar.html'
+        templateUrl: 'templates/usuarios_editar.html',
+        controller: 'usuariosCtrl'
      
       }
     }
