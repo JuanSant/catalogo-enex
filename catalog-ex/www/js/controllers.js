@@ -54,9 +54,9 @@ angular.module('starter.controllers', [])
 
 .controller('usuariosCtrl', function($scope) {
   $scope.usuarios = [
-    {id: 1, nombre: 'Julian Casablancas', telefono: 3310485946},
-    {id: 2, nombre: 'Herbert James', telefono: 3314225963},
-    {id: 3, nombre: 'David Lee', telefono: 3310890802}
+    {id: 1, nombre: 'Julian Casablancas', telefono: 3310485946, sucursal: 'Las Fuentes'},
+    {id: 2, nombre: 'Herbert James', telefono: 3314225963, sucursal: 'Galerias'},
+    {id: 3, nombre: 'David Lee', telefono: 3310890802, sucursal: 'Patria'}
   ];
 })
 

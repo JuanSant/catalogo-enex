@@ -1,19 +1,10 @@
 <ion-view view-title="Usuarios">
   <ion-content>
-  	<div align="center">
-  		<a class="button button-icon icon ion-plus-circled"></a>
-  		<a class="button button-icon icon ion-minus-circled"></a>
-  	</div>
     <div class="list">
-	    <a class="item item-avatar" href="#">
+	    <a class="item item-avatar" ng-repeat="usuario in usuarios" href="#/app/usuarios/{{usuario.id}}">
 	      <img src="/img/margarito.jpg">
-	      <h2>Margarito</h2>
-	      <p>Sucursal: Andares</p>
-	    </a>
-	    <a class="item item-avatar" href="#">
-	      <img src="/img/margarito.jpg">
-	      <h2>Margarito</h2>
-	      <p>Sucursal: La Calma</p>
+	      <h2>{{usuario.nombre}}</h2>
+	      <p>Sucursal: {{usuario.sucursal}}</p>
 	    </a>
 	</div>
   </ion-content>
