@@ -1,6 +1,11 @@
 <ion-view view-title="Editar Usuarios">
   <ion-content>
-  	<h2>World</h2>
+  	<div class="list">
+	    <a class="item item-avatar" ng-repeat="usuario in usuarios" href="#/app/usuarios/{{usuario.id}}">
+	      <img src="/img/margarito.jpg">
+	      <h2>{{usuario.nombre}}</h2>
+	    </a>
+	</div>
 	   
   </ion-content>
 </ion-view>

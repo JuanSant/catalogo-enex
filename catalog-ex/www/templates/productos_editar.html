@@ -1,6 +1,16 @@
 <ion-view view-title="Editar Productos">
   <ion-content>
-  	<h2>Hello</h2>
+  	<div id="mainList">
+	   <ion-list> 
+	    	
+	    		<ion-item ng-repeat="producto in productos" class="item-thumbnail-left" href="#/app/productos/{{producto.id}}"> 
+		       			 	<img class="prod" src="/img/margarito.jpg">
+				    		<h2>{{producto.title}}</h2>
+		        </ion-item> 
+		      	
+
+    	</ion-list>
+    </div>
 	   
   </ion-content>
 </ion-view>
