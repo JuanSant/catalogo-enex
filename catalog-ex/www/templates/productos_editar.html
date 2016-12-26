@@ -1,16 +1,25 @@
 <ion-view view-title="Editar Productos">
   <ion-content>
-  	<div id="mainList">
-	   <ion-list> 
-	    	
-	    		<ion-item ng-repeat="producto in productos" class="item-thumbnail-left" href="#/app/productos/{{producto.id}}"> 
-		       			 	<img class="prod" src="/img/margarito.jpg">
-				    		<h2>{{producto.title}}</h2>
-		        </ion-item> 
-		      	
-
-    	</ion-list>
-    </div>
+	<div class="list list-inset">
+	  <label class="item item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Search">
+	  </label>
+	</div>
+    <div class="list" >
+	  		<div class="item item-avatar-left" ng-repeat="producto in productos">
+	  				<img src="/img/margarito.jpg">
+			    	<h3>{{producto.title}}</h3>
+			    	<div class="edit-delete-btn" align="right">
+				    	<button class="button button-positive" href="#/app/productos/{{producto.id}}">
+				    		<i class="icon ion-edit"></i>
+				    	</button>
+				    	<button class="button button-assertive">
+				    		<i class="icon ion-trash-b"></i>
+				    	</button>
+				    </div>
+	  		</div>
+  		</div>
 	   
   </ion-content>
 </ion-view>

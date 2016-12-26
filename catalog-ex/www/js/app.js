@@ -80,6 +80,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.temas', {
+    url: '/temas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tema.html',
+        controller: 'temasCtrl'
+      }
+    }
+  })
+
   .state('app.usuariosConfig', {
     url: '/usuariosConfig',
     views: {

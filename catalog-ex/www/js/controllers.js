@@ -60,5 +60,13 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('temasCtrl', function($scope) {
+  $scope.temas = [
+    {id: 1, nombre: 'Tema1', img: '#'},
+    {id: 2, nombre: 'Tema2', img: '#'},
+    {id: 3, nombre: 'Tema3', img: '#'}
+  ];
+})
+
 .controller('productoCtrl', function($scope, $stateParams) {
 });

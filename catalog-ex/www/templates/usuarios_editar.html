@@ -1,23 +1,24 @@
 <ion-view view-title="Editar Usuarios">
   <ion-content>
-
-  		<div class="list" >
-  			<a class="item item-avatar-left" ng-repeat="usuario in usuarios">
-	  			<img src="/img/margarito.jpg">
-	  			<div align="left">
-			    	<h2>{{usuario.nombre}}</h2>
-				</div>
-				<div align="right">
-					<i class=" ion-edit"></i>
-						<i class=" ion-trash-b"></i>
-				</div>
-		    <!--<a class="button button-icon button-clear" href="#/app/usuarios/{{usuario.id}}"> -->
-		    	 <!--</a>
-	        
-	        <a class="button button-icon button-clear"> -->
-	        	
-	        <!--</a>-->
-	        </a>
-  		</div>
+  	<div class="list list-inset">
+	  <label class="item item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Search">
+	  </label>
+	</div>
+  	<div class="list" >
+  		<div class="item item-avatar-left" ng-repeat="usuario in usuarios">	  				
+  				<img src="/img/margarito.jpg">
+		    	<h3>{{usuario.nombre}}</h3>
+			    <div class="edit-delete-btn" align="right">
+				    <button class="button button-positive">
+				   		<i class="icon ion-edit"></i>
+				   	</button>
+				   	<button class="button button-assertive">
+				   		<i class="icon ion-trash-b"></i>
+			    	</button>
+			    </div>
+	  	</div>
+  	</div>
   </ion-content>
 </ion-view>
