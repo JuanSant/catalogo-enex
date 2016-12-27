@@ -1,24 +1,34 @@
 <ion-view view-title="Temas">
 	<ion-content>
-		<div class="list card">
-			<div class="item item-avatar">
-				<img src="/img/margarito.jpg">
-				<h2>Tema 1</h2>
-				<div class="edit-delete-btn" align="right">
-				    <button class="button button-positive">
-				   		<i class="icon ion-edit"></i>
-				   	</button>
-				   	<button class="button button-assertive">
-				   		<i class="icon ion-trash-b"></i>
-			    	</button>
-			    </div>
-
-			    <div class="item item-image">
-			    	<img src="/img/margarito.jpg">
-			    </div>
-			    <a class="item item-icon-left positive" href="#">
-			    	<i class="icon ion-ion-wand"></i>
-			    </a>
+		<center><button class="button btn-add button-balanced">
+			<i class="icon ion-plus"></i>
+		</button></center>
+		<div class="list card" ng-repeat="tema in temas">
+			<div class="item item-divider">
+				<center><h2>{{tema.nombre}}</h2></center>
+			</div>
+			<div class="item item-text-wrap">
+				<center><img class="img-Tema" src="/img/margarito.jpg"></center>
+			</div>
+			<div class="item item-divider">
+				<div class="row" align="center">
+			    	<div class="col">
+			    		<button class="button button-royal">
+			    			<i class="icon ion-wand"></i>
+			    		</button>
+			    	</div>	
+			    	
+			    	<div class="col">
+					    <button class="button button-positive">
+					   		<i class="icon ion-edit"></i>
+					   	</button>
+				   	</div>
+				   	<div class="col">
+					   	<button class="button button-assertive">
+					   		<i class="icon ion-trash-b"></i>
+				    	</button>
+				    </div>
+			    </div>				
 			</div>
 		</div>
 	</ion-content>

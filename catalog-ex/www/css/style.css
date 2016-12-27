@@ -18,6 +18,10 @@
 	margin-right: 20px;
 }
 
+#shoppingBtn{
+	margin-right: 5px;
+}
+
 .prod {
 	width: 30px;
 	height: 30px;
@@ -29,6 +33,25 @@
 }
 
 .img-Edit{
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50% !important;
+}
+
+.img-Tema{
+	width: 80px;
+	height: 80px;
+}
+
+.btn-add{
+	top:10px !important;
+	border-radius: 50% !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
+.btn-add2{
+	
+	margin-top: -10px;
+	border-radius: 50% !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
 }

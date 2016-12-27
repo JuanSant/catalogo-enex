@@ -68,5 +68,19 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('pedidosCtrl', function($scope) {
+  $scope.pedidos = [
+    {id: 1, cliente: 'Julian Casablancas', sucursal: 'Las Fuentes', detalle: 'Producto1, Producto2'},
+    {id: 2, cliente: 'Herbert James', sucursal: 'Galerias', detalle: 'Producto1, Producto2'},
+    {id: 3, cliente: 'David Lee', sucursal: 'Patria', detalle: 'Producto1, Producto2'}
+  ];
+})
+
+.controller('usuarioCtrl', function($scope, $stateParams) {
+})
+
+.controller('pedidoCtrl', function($scope, $stateParams) {
+})
+
 .controller('productoCtrl', function($scope, $stateParams) {
 });

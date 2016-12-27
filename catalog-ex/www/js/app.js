@@ -70,6 +70,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.singleUsuario', {
+    url: '/usuarios/:usuarioId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/usuario.html',
+        controller: 'usuarioCtrl'
+      }
+    }
+  })
+
+  .state('app.singlePedido', {
+    url: '/pedidos/:pedidoId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/pedido.html',
+        controller: 'pedidoCtrl'
+      }
+    }
+  })
+
   .state('app.productosConfig', {
     url: '/productosConfig',
     views: {
@@ -88,6 +108,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'temasCtrl'
       }
     }
+  })
+
+  .state('app.pedidos', {
+    url: '/pedidos',
+    views: {
+      'menuContent' : {
+        templateUrl: 'templates/pedidos.html',
+        controller: 'pedidosCtrl'
+      }
+    }
+  
   })
 
   .state('app.usuariosConfig', {
