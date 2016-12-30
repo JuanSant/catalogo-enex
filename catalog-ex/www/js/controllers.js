@@ -70,11 +70,39 @@ angular.module('starter.controllers', [])
 
 .controller('pedidosCtrl', function($scope) {
   $scope.pedidos = [
-    {id: 1, cliente: 'Julian Casablancas', sucursal: 'Las Fuentes', detalle: 'Producto1, Producto2'},
-    {id: 2, cliente: 'Herbert James', sucursal: 'Galerias', detalle: 'Producto1, Producto2'},
-    {id: 3, cliente: 'David Lee', sucursal: 'Patria', detalle: 'Producto1, Producto2'}
+    {id: 1, folio: 1234, cliente: 'Julian Casablancas', sucursal: 'Las Fuentes', detalle: 'Producto1, Producto2', fecha: 'Jun/10/2017'},
+    {id: 2, folio: 1235, cliente: 'Herbert James', sucursal: 'Galerias', detalle: 'Producto1, Producto2', fecha: 'Jun/10/2017'},
+    {id: 3, folio: 1236, cliente: 'David Lee', sucursal: 'Patria', detalle: 'Producto1, Producto2', fecha: 'Jun/10/2017'}
   ];
 })
+
+.controller('misPedidosCtrl', function($scope) {
+  $scope.misPedidos = [
+    {id: 1, folio: 1234, cliente: 'Julian Casablancas', sucursal: 'Las Fuentes', detalle: 'Producto1, Producto2', fecha: 'Jun/10/2017'},
+    {id: 2, folio: 1239, cliente: 'Julian Casablancas', sucursal: 'Galerias', detalle: 'Producto1, Producto2', fecha: 'Jun/10/2017'},
+    {id: 3, folio: 1240, cliente: 'Julian Casablancas', sucursal: 'Bugambiliar', detalle: 'Producto1, Producto2', fecha: 'Jun/10/2017'}
+  ];
+})
+
+.controller('carouselCtrl', function($scope) {
+  $scope.myInterval = 3000;
+  $scope.slides = [
+      {
+        image: 'http://lorempixel.com/400/200/'
+      },
+      {
+        image: 'http://lorempixel.com/400/200/food'
+      },
+      {
+        image: 'http://lorempixel.com/400/200/sports'
+      },
+      {
+        image: 'http://lorempixel.com/400/200/people'
+      }
+  ];
+
+})
+
 
 .controller('usuarioCtrl', function($scope, $stateParams) {
 })
@@ -83,4 +111,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('productoCtrl', function($scope, $stateParams) {
+
 });
+

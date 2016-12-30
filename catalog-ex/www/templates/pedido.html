@@ -1,0 +1,85 @@
+<ion-view view-title="Pedido">
+  <ion-content>
+    <div class="card">
+    	<div class="item item-text-wrap">
+    		<ks-swiper-container initial-slide="3" speed="2000" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="5" pagination-clickable="false" override-parameters="{effect: 'coverflow',coverflow: {rotate: 50,stretch: 0,depth: 100,modifier: 1,slideShadows : false}}">
+                <ks-swiper-slide class="swiper-slide">
+                    <img src="img/margarito.jpg" width="100%">
+                </ks-swiper-slide>
+            </ks-swiper-container>
+    	</div>
+    	<div class="item item-divider">
+            <div class="row">
+                <div class="col"><h3>Producto</h3></div>
+                <div class="col"><h3>Cantidad</h3></div>
+                <div class="col"><h3>Precio</h3></div>
+                <div class="col"></div>
+            </div>
+
+            <!--<div class="row" ng-repeat="producto in pedido">-->
+            <div class="row">
+                <div class="col">Producto1</div>
+                <div class="col">
+
+                        <ion-item>
+                                <ion-label>Cantidad</ion-label>
+                                <ion-select [(ngModel)]="cantidad">
+                                    <ion-option value="0">0</ion-option>
+                                    <ion-option value="1">1</ion-option>
+                                    <ion-option value="2">2</ion-option>
+                                    <ion-option value="3">3</ion-option>
+                                    <ion-option value="4">4</ion-option>
+                                    <ion-option value="5">5</ion-option>
+                                    <ion-option value="6">6</ion-option>
+                                    <ion-option value="7">7</ion-option>
+                                    <ion-option value="8">8</ion-option>
+                                    <ion-option value="9">9</ion-option>
+                                    <ion-option value="10">10</ion-option>
+                                </ion-select>
+                        </ion-item>
+
+                </div>
+                <div class="col">$40</div>
+                <div class="col"><button class="button button-assertive">
+                        <i class="icon ion-trash-b"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">Producto2</div>
+                <div class="col">
+
+                        <ion-item>
+                                <ion-label>Cantidad</ion-label>
+                                <ion-select [(ngModel)]="cantidad">
+                                    <ion-option value="1">1</ion-option>
+                                    <ion-option value="2">2</ion-option>
+                                    <ion-option value="3">3</ion-option>
+                                    <ion-option value="4">4</ion-option>
+                                    <ion-option value="5">5</ion-option>
+                                    <ion-option value="6">6</ion-option>
+                                    <ion-option value="7">7</ion-option>
+                                    <ion-option value="8">8</ion-option>
+                                    <ion-option value="9">9</ion-option>
+                                    <ion-option value="10">10</ion-option>
+                                </ion-select>
+                        </ion-item>
+
+                </div>
+                <div class="col">$40</div>
+                <div class="col"><button class="button button-assertive">
+                        <i class="icon ion-trash-b"></i>
+                    </button>
+                </div>
+            </div>
+
+    		<p align="right">
+                <button class="button button-balanced">
+                    <i class="icon ion-ios-checkmark-outline">Confirmar Pedido</i>
+                </button>
+    		</p>
+    	</div>
+    </div>
+
+  </ion-content>
+</ion-view>

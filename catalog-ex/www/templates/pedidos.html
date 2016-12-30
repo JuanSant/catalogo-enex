@@ -1,0 +1,27 @@
+<ion-view view-title="Pedidos">
+  <ion-content>
+	<div class="list list-inset">
+	  <label class="item item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Buscar">
+	  </label>
+	</div>
+	
+	<div class="list card" >
+  		<div class="item item-text-wrap" align="center" ng-repeat="pedido in pedidos">	  				
+  			<div class="row">	
+		    	<div class="col"><p>{{pedido.folio}}</p> <p>{{pedido.cliente}}</p> <p>{{pedido.fecha}}</p></div>
+				<div class="col">
+					<button class="button btn-circled button-balanced"><i class="icon ion-ios-checkmark-outline"></i></button>
+					 </div>
+				<div class="col">
+					<button class="button btn-circled button-positive">
+				   		<i class="icon ion-eye"></i>
+				   	</button>
+					</div>
+			</div>
+	  	</div>
+  	</div>
+	   
+  </ion-content>
+</ion-view>

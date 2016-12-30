@@ -1,8 +1,24 @@
-<ion-view view-title="producto">
+<ion-view view-title="Producto">
   <ion-content>
     <div class="card">
     	<div class="item item-text-wrap">
-    		<img class="full-image" src="/img/margarito.jpg">
+            <!--<div ng-controller="carouselCtrl" id="slides_control">
+                <div>
+                    <carousel interval="myInterval">
+                        <slide ng-repeat="slide in slides" active="slide.active">
+                            <img ng-src="{{slide.image}}">
+                            <div class="carousel-caption">
+                                <h4>Slide {{$index+1}}</h4>
+                            </div>
+                        </slide>
+                    </carousel>
+                </div>
+            </div>-->
+            <ks-swiper-container initial-slide="3" speed="2000" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="5" pagination-clickable="false" override-parameters="{effect: 'coverflow',coverflow: {rotate: 50,stretch: 0,depth: 100,modifier: 1,slideShadows : false}}">
+                <ks-swiper-slide class="swiper-slide">
+                    <img src="img/margarito.jpg" width="100%">
+                </ks-swiper-slide>
+            </ks-swiper-container>
     	</div>
     	<div class="item item-divider">
     		<p>Descripción
@@ -12,7 +28,7 @@
     		<br>Disponibilidad: </p>
 
     		<p align="right">
-    			<button class="button button-balanced">
+    			<button class="button btn-circled button-balanced">
     				<i class="icon ion-android-cart"></i>
     			</button>
     		</p>

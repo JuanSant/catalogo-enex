@@ -43,6 +43,18 @@
 	height: 80px;
 }
 
+.btn-circled{
+	border-radius: 50% !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
+.btn-Pic{
+	top:10px !important;
+	right: 10px !important;
+	border-radius: 50% !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
 .btn-add{
 	top:10px !important;
 	border-radius: 50% !important;
@@ -54,4 +66,21 @@
 	margin-top: -10px;
 	border-radius: 50% !important;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
+#slides_control > div{
+	height: 200px;
+}
+
+#img_carousel{
+	margin: auto;
+	width: 400px;
+}
+
+#slides_control{
+	
+	width: 400px;
+	left: 50%;
+	top: 20px;
+	margin-left: -200px;
 }

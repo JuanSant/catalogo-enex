@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+
     <title></title>
 
     <link rel="manifest" href="manifest.json">
@@ -25,6 +27,13 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/swiper/dist/css/swiper.min.css">
+    <script type="text/javascript" src="lib/swiper/dist/js/swiper.js"></script>
+    <script src="lib/angular-swiper/dist/angular-swiper.js"></script>
+<!--    <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>-->
+
+
     
 
     <!-- cordova script (this will be a 404 during development) -->

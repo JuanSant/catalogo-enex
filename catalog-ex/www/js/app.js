@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic','starter.controllers', 'ksSwiper'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -90,6 +90,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.miPedido', {
+    url: '/misPedidos/:pedidoId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/pedido.html',
+        controller: 'pedidoCtrl'
+      }
+    }
+  })
+
   .state('app.productosConfig', {
     url: '/productosConfig',
     views: {
@@ -116,6 +126,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       'menuContent' : {
         templateUrl: 'templates/pedidos.html',
         controller: 'pedidosCtrl'
+      }
+    }
+  
+  })
+
+  .state('app.misPedidos', {
+    url: '/misPedidos',
+    views: {
+      'menuContent' : {
+        templateUrl: 'templates/misPedidos.html',
+        controller: 'misPedidosCtrl'
       }
     }
   
